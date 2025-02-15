@@ -4,9 +4,17 @@ const About = () => {
     <div className="min-h-screen bg-black">
       <div className="container py-16 max-w-4xl mx-auto">
         <div className="aspect-video bg-black/40 rounded-lg overflow-hidden mb-12">
-          {/* Video embed placeholder */}
-          <div className="w-full h-full flex items-center justify-center bg-black/60 text-white/40">
-            Video em breve
+          <div className="w-full h-full relative">
+            <img
+              src="/photo-1605810230434-7631ac76ec81"
+              alt="Video Preview"
+              className="w-full h-full object-cover opacity-60"
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-20 h-20 rounded-full bg-[#007F2D]/90 flex items-center justify-center">
+                <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[20px] border-l-white border-b-[12px] border-b-transparent ml-2"></div>
+              </div>
+            </div>
           </div>
         </div>
 
