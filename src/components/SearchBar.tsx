@@ -14,12 +14,12 @@ export const SearchBar: React.FC<SearchBarProps> = ({
   onFiltersChange,
 }) => {
   return (
-    <div className="w-full max-w-4xl mx-auto p-4 space-y-4">
+    <div className="w-full max-w-4xl mx-auto p-4 space-y-4 bg-black/40 backdrop-blur-sm rounded-lg">
       <div className="relative">
         <input
           type="text"
           placeholder="Buscar por nome ou habilidade..."
-          className="w-full h-12 pl-12 pr-4 rounded-lg border border-gray-200 focus:outline-none focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all duration-200"
+          className="w-full h-12 pl-12 pr-4 rounded-lg bg-black/60 border border-white/10 text-white placeholder:text-gray-400 focus:outline-none focus:border-[#007F2D] focus:ring-2 focus:ring-[#007F2D]/20 transition-all duration-200"
           value={filters.search}
           onChange={(e) =>
             onFiltersChange({ ...filters, search: e.target.value })
@@ -29,7 +29,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
       </div>
       <div className="flex gap-4">
         <select
-          className="flex-1 h-12 px-4 rounded-lg border border-gray-200 focus:outline-none focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all duration-200"
+          className="flex-1 h-12 px-4 rounded-lg bg-black/60 border border-white/10 text-white focus:outline-none focus:border-[#007F2D] focus:ring-2 focus:ring-[#007F2D]/20 transition-all duration-200"
           value={filters.city}
           onChange={(e) => onFiltersChange({ ...filters, city: e.target.value })}
         >
@@ -41,7 +41,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
           ))}
         </select>
         <select
-          className="flex-1 h-12 px-4 rounded-lg border border-gray-200 focus:outline-none focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all duration-200"
+          className="flex-1 h-12 px-4 rounded-lg bg-black/60 border border-white/10 text-white focus:outline-none focus:border-[#007F2D] focus:ring-2 focus:ring-[#007F2D]/20 transition-all duration-200"
           value={filters.area}
           onChange={(e) => onFiltersChange({ ...filters, area: e.target.value })}
         >
