@@ -3,6 +3,14 @@ const About = () => {
   return (
     <div className="min-h-screen bg-black">
       <div className="container py-16 max-w-4xl mx-auto">
+        <div className="text-center mb-12">
+          <img
+            src="/public/lovable-uploads/ebdb18ee-c901-4ed5-8a12-d9437ac467a1.png"
+            alt="Criativos Logo"
+            className="mx-auto h-24 md:h-32"
+          />
+        </div>
+
         <div className="aspect-video bg-black/40 rounded-lg overflow-hidden mb-12">
           <div className="w-full h-full relative">
             <iframe 
