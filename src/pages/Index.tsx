@@ -2,6 +2,7 @@ import { SearchBar } from "@/components/SearchBar";
 import { ProfessionalCard } from "@/components/ProfessionalCard";
 import { professionals } from "@/data/professionals";
 import { useSearch } from "@/hooks/useSearch";
+import { useAssets } from "@/hooks/useAssets";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
 
@@ -15,6 +16,7 @@ const Index = () => {
     paginatedProfessionals
   } = useSearch(professionals);
 
+  const { logo } = useAssets();
   const resultsRef = useRef<HTMLDivElement>(null);
 
   const handlePageChange = (newPage: number) => {
@@ -33,7 +35,7 @@ const Index = () => {
         <div className="container">
           <div className="space-y-8 text-center">
             <img
-              src="/logo.png"
+              src={logo}
               alt="Criativos Logo"
               className="mx-auto h-24 md:h-32"
             />

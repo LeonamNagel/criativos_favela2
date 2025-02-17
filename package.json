@@ -9,7 +9,8 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "upload-images": "tsx scripts/uploadImages.ts"
+    "upload-images": "tsx scripts/uploadImages.ts",
+    "upload-assets": "tsx scripts/uploadAssets.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
