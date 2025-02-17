@@ -37,7 +37,7 @@ const Index = () => {
             <img
               src={logo}
               alt="Criativos Logo"
-              className="mx-auto h-24 md:h-32"
+              className="mx-auto h-32 md:h-40"
             />
             <div className="space-y-4">
               <h2 className="text-4xl font-bold tracking-tight text-white">
