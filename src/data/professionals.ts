@@ -1,5 +1,3 @@
-import { supabase, STORAGE_BUCKET } from '../config/supabase';
-
 export type Professional = {
   id: number;
   name: string;
@@ -25,20 +23,11 @@ export const cities = [
   "Salvador",
 ] as const;
 
-// Função auxiliar para gerar a URL da imagem no Supabase
-const getSupabaseImageUrl = (imageName: string) => {
-  const { data } = supabase.storage
-    .from(STORAGE_BUCKET)
-    .getPublicUrl(imageName);
-
-  return data.publicUrl;
-};
-
 export const professionals: Professional[] = [
   {
     "id": 1,
     "name": "Gabriel Araújo",
-    "photo": getSupabaseImageUrl("GABRIEL ARAUJO.JPG"),
+    "photo": "/professionals/GABRIEL ARAUJO.webp",
     "city": "São Paulo",
     "area": [
       "Filmagem e Fotografia",
@@ -58,7 +47,7 @@ export const professionals: Professional[] = [
   {
     "id": 2,
     "name": "Luz Barbosa",
-    "photo": getSupabaseImageUrl("LUZ BARBOSA.jpg"),
+    "photo": "/professionals/LUZ BARBOSA.webp",
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -76,7 +65,7 @@ export const professionals: Professional[] = [
   {
     "id": 3,
     "name": "Pedro Sampaio",
-    "photo": getSupabaseImageUrl("PEDRO SAMPAIO.jpg"),
+    "photo": "/professionals/PEDRO SAMPAIO.webp",
     "city": "São Paulo",
     "area": [
       "Filmagem e Fotografia"
@@ -91,7 +80,7 @@ export const professionals: Professional[] = [
   {
     "id": 4,
     "name": "Ivan Pereira",
-    "photo": getSupabaseImageUrl("IVAN.JPEG.jpg"),
+    "photo": "/professionals/IVAN.JPEG.webp",
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -110,7 +99,7 @@ export const professionals: Professional[] = [
   {
     "id": 5,
     "name": "Ray Santos",
-    "photo": getSupabaseImageUrl("RAY SOUZA.jpg"),
+    "photo": "/professionals/RAY SOUZA.webp",
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -127,7 +116,7 @@ export const professionals: Professional[] = [
   {
     "id": 6,
     "name": "Dornelles",
-    "photo": getSupabaseImageUrl("Dorneles.JPG"),
+    "photo": "/professionals/Dorneles.webp",
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -144,7 +133,7 @@ export const professionals: Professional[] = [
   {
     "id": 7,
     "name": "Andy Black",
-    "photo": getSupabaseImageUrl("ANDY BLACK.jpg"),
+    "photo": "/professionals/ANDY BLACK.webp",
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -161,7 +150,7 @@ export const professionals: Professional[] = [
   {
     "id": 8,
     "name": "Dhara Andrade",
-    "photo": getSupabaseImageUrl("DHARA ANDRADE.jpg"),
+    "photo": "/professionals/DHARA ANDRADE.webp",
     "city": "São Paulo",
     "area": [
       "Filmagem e Fotografia",
@@ -176,7 +165,7 @@ export const professionals: Professional[] = [
   {
     "id": 9,
     "name": "Vitor Almeida",
-    "photo": getSupabaseImageUrl("VITOR ALMEIDA.JPG"),
+    "photo": "/professionals/VITOR ALMEIDA.webp",
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -192,7 +181,7 @@ export const professionals: Professional[] = [
   {
     "id": 10,
     "name": "Debritas",
-    "photo": getSupabaseImageUrl("Debritas.jpg"),
+    "photo": "/professionals/Debritas.webp",
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -209,7 +198,7 @@ export const professionals: Professional[] = [
   {
     "id": 11,
     "name": "Mar Zenin",
-    "photo": getSupabaseImageUrl("Mar Zenin.JPG"),
+    "photo": "/professionals/Mar Zenin.webp",
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -227,7 +216,7 @@ export const professionals: Professional[] = [
   {
     "id": 12,
     "name": "Rare Odin",
-    "photo": getSupabaseImageUrl("RARE ODIN.jpg"),
+    "photo": "/professionals/RARE ODIN.webp",
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -244,7 +233,7 @@ export const professionals: Professional[] = [
   {
     "id": 13,
     "name": "Leandra Barros",
-    "photo": getSupabaseImageUrl("LEANDRA.jpg"),
+    "photo": "/professionals/LEANDRA.webp",
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -260,7 +249,7 @@ export const professionals: Professional[] = [
   {
     "id": 14,
     "name": "Juliana Bitencourt",
-    "photo": getSupabaseImageUrl("JULIANA BITENCOURT.jpg"),
+    "photo": "/professionals/JULIANA BITENCOURT.webp",
     "city": "São Paulo",
     "area": [
       "Filmagem e Fotografia",
@@ -275,7 +264,7 @@ export const professionals: Professional[] = [
   {
     "id": 15,
     "name": "Guilherme Calafate",
-    "photo": getSupabaseImageUrl("GUILHERME CALAFATE.JPG"),
+    "photo": "/professionals/GUILHERME CALAFATE.webp",
     "city": "São Paulo",
     "area": [
       "Som e Áudio"
@@ -290,7 +279,7 @@ export const professionals: Professional[] = [
   {
     "id": 16,
     "name": "João Victor",
-    "photo": getSupabaseImageUrl("JOAO VITOR.PNG"),
+    "photo": "/professionals/JOÃO VITOR.webp",
     "city": "São Paulo",
     "area": [
       "Filmagem e Fotografia",
@@ -305,7 +294,7 @@ export const professionals: Professional[] = [
   {
     "id": 17,
     "name": "Eduardo Frois",
-    "photo": getSupabaseImageUrl("EDUARDO FROIS.jpg"),
+    "photo": "/professionals/EDUARDO FROIS.webp",
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -322,7 +311,7 @@ export const professionals: Professional[] = [
   {
     "id": 18,
     "name": "Pietro Universo",
-    "photo": getSupabaseImageUrl("PIETRO UNIVERSO.jpg"),
+    "photo": "/professionals/PIETRO UNIVERSO.webp",
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -341,7 +330,7 @@ export const professionals: Professional[] = [
   {
     "id": 19,
     "name": "Ju Costa",
-    "photo": getSupabaseImageUrl("JU COSTA.JPG"),
+    "photo": "/professionals/JU COSTA.webp",
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -357,7 +346,7 @@ export const professionals: Professional[] = [
   {
     "id": 20,
     "name": "Ellen Lopes",
-    "photo": getSupabaseImageUrl("ELLEN LOPES.jpg"),
+    "photo": "/professionals/ELLEN LOPES.webp",
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
