@@ -1,9 +1,8 @@
-import { supabase } from '../src/config/supabase';
+import { supabase, STORAGE_BUCKET } from './supabase';
 import fs from 'fs';
 import path from 'path';
 
-const ASSETS_BUCKET = 'assets';
-const ASSETS_DIR = path.join(process.cwd(), 'src', 'assets');
+const ASSETS_DIR = path.join(process.cwd(), 'src', 'logos');
 
 async function uploadImage(filePath: string) {
     const fileName = path.basename(filePath);
@@ -11,7 +10,7 @@ async function uploadImage(filePath: string) {
 
     try {
         const { data, error } = await supabase.storage
-            .from(ASSETS_BUCKET)
+            .from(STORAGE_BUCKET)
             .upload(fileName, fileBuffer, {
                 upsert: true,
                 contentType: getContentType(fileName)
