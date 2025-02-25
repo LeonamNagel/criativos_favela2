@@ -50,7 +50,7 @@ O servidor de desenvolvimento está rodando corretamente na porta 8081 e pode se
 - Atualizada a meta descrição para melhor SEO
 - Mantida a experiência do usuário com a mesma funcionalidade
 - Simplificada a barra de navegação para mostrar apenas links de redes sociais
-- Removido botão redundante "Encontrar Profissionais"
+- Removido o botão "Encontrar Profissionais" da tela inicial para simplificar a interface
 
 ### Unificação de Páginas
 - Unificadas as páginas "Encontrar profissionais" e "Saiba Mais" em uma única página

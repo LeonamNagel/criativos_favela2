@@ -94,15 +94,6 @@ const Index = () => {
                             Conheça nossos talentos e leve a criatividade das favelas para a sua empresa. Clique no botão abaixo para contratar esses profissionais incríveis e transformar seus projetos!
                         </p>
                     </div>
-
-                    <div className="pt-4 text-center">
-                        <button
-                            onClick={scrollToSearch}
-                            className="inline-block px-6 py-3 bg-[#007F2D] hover:bg-[#006024] text-white font-semibold rounded-lg transition-colors"
-                        >
-                            Encontrar Profissionais
-                        </button>
-                    </div>
                 </div>
             </div>
 
