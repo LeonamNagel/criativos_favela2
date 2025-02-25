@@ -33,7 +33,7 @@ export const professionals: Professional[] = [
     "id": 1,
     "name": "Gabriel Araújo",
     "photo": getImagePath("GABRIEL ARAUJO.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Filmagem e Fotografia",
       "Arte e Design",
@@ -53,7 +53,7 @@ export const professionals: Professional[] = [
     "id": 2,
     "name": "Luz Barbosa",
     "photo": getImagePath("LUZ BARBOSA.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Produção e Direção",
       "Filmagem e Fotografia",
@@ -71,7 +71,7 @@ export const professionals: Professional[] = [
     "id": 3,
     "name": "Pedro Sampaio",
     "photo": getImagePath("PEDRO SAMPAIO.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Filmagem e Fotografia"
     ],
@@ -86,7 +86,7 @@ export const professionals: Professional[] = [
     "id": 4,
     "name": "Ivan Pereira",
     "photo": getImagePath("IVAN.JPEG.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Produção e Direção",
       "Filmagem e Fotografia",
@@ -105,7 +105,7 @@ export const professionals: Professional[] = [
     "id": 5,
     "name": "Ray Santos",
     "photo": getImagePath("RAY SOUZA.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Produção e Direção",
       "Arte e Design",
@@ -122,7 +122,7 @@ export const professionals: Professional[] = [
     "id": 6,
     "name": "Dornelles",
     "photo": getImagePath("Dorneles.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Produção e Direção",
       "Filmagem e Fotografia",
@@ -139,7 +139,7 @@ export const professionals: Professional[] = [
     "id": 7,
     "name": "Andy Black",
     "photo": getImagePath("ANDY BLACK.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Produção e Direção",
       "Filmagem e Fotografia",
@@ -156,7 +156,7 @@ export const professionals: Professional[] = [
     "id": 8,
     "name": "Dhara Andrade",
     "photo": getImagePath("DHARA ANDRADE.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Filmagem e Fotografia",
       "Arte e Design"
@@ -171,7 +171,7 @@ export const professionals: Professional[] = [
     "id": 9,
     "name": "Vitor Almeida",
     "photo": getImagePath("VITOR ALMEIDA.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Produção e Direção",
       "Comunicação e Marketing"
@@ -187,7 +187,7 @@ export const professionals: Professional[] = [
     "id": 10,
     "name": "Debritas",
     "photo": getImagePath("Debritas.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Produção e Direção",
       "Filmagem e Fotografia",
@@ -204,7 +204,7 @@ export const professionals: Professional[] = [
     "id": 11,
     "name": "Mar Zenin",
     "photo": getImagePath("Mar Zenin.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Produção e Direção",
       "Filmagem e Fotografia",
@@ -222,7 +222,7 @@ export const professionals: Professional[] = [
     "id": 12,
     "name": "Rare Odin",
     "photo": getImagePath("RARE ODIN.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Produção e Direção",
       "Filmagem e Fotografia",
@@ -239,7 +239,7 @@ export const professionals: Professional[] = [
     "id": 13,
     "name": "Leandra Barros",
     "photo": getImagePath("LEANDRA.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Produção e Direção",
       "Filmagem e Fotografia",
@@ -256,7 +256,7 @@ export const professionals: Professional[] = [
     "id": 14,
     "name": "Juliana Bitencourt",
     "photo": getImagePath("JULIANA BITENCOURT.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Filmagem e Fotografia",
       "Arte e Design"
@@ -271,7 +271,7 @@ export const professionals: Professional[] = [
     "id": 15,
     "name": "Guilherme Calafate",
     "photo": getImagePath("GUILHERME CALAFATE.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Som e Áudio"
     ],
@@ -286,7 +286,7 @@ export const professionals: Professional[] = [
     "id": 16,
     "name": "João Victor",
     "photo": getImagePath("JOAO VITOR.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Filmagem e Fotografia",
       "Edição e Pós-Produção"
@@ -301,7 +301,7 @@ export const professionals: Professional[] = [
     "id": 17,
     "name": "Eduardo Frois",
     "photo": getImagePath("EDUARDO FROIS.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Produção e Direção",
       "Som e Áudio",
@@ -318,7 +318,7 @@ export const professionals: Professional[] = [
     "id": 18,
     "name": "Pietro Universo",
     "photo": getImagePath("PIETRO UNIVERSO.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Produção e Direção",
       "Filmagem e Fotografia",
@@ -337,7 +337,7 @@ export const professionals: Professional[] = [
     "id": 19,
     "name": "Ju Costa",
     "photo": getImagePath("JU COSTA.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Produção e Direção",
       "Comunicação e Marketing"
@@ -353,7 +353,7 @@ export const professionals: Professional[] = [
     "id": 20,
     "name": "Ellen Lopes",
     "photo": getImagePath("ELLEN LOPES.webp"),
-    "city": "São Paulo",
+    "city": "Rio de Janeiro",
     "area": [
       "Produção e Direção",
       "Comunicação e Marketing"
