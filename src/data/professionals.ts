@@ -1,5 +1,3 @@
-import { supabase, STORAGE_BUCKET } from '../config/supabase';
-
 export type Professional = {
   id: number;
   name: string;
@@ -25,20 +23,16 @@ export const cities = [
   "Salvador",
 ] as const;
 
-// Função auxiliar para gerar a URL da imagem no Supabase
-const getSupabaseImageUrl = (imageName: string) => {
-  const { data } = supabase.storage
-    .from(STORAGE_BUCKET)
-    .getPublicUrl(imageName);
-
-  return data.publicUrl;
+// Função auxiliar para gerar o caminho da imagem na pasta public
+const getImagePath = (imageName: string) => {
+  return `/professionals/${imageName}`;
 };
 
 export const professionals: Professional[] = [
   {
     "id": 1,
     "name": "Gabriel Araújo",
-    "photo": getSupabaseImageUrl("GABRIEL ARAUJO.webp"),
+    "photo": getImagePath("GABRIEL ARAUJO.webp"),
     "city": "São Paulo",
     "area": [
       "Filmagem e Fotografia",
@@ -58,7 +52,7 @@ export const professionals: Professional[] = [
   {
     "id": 2,
     "name": "Luz Barbosa",
-    "photo": getSupabaseImageUrl("LUZ BARBOSA.webp"),
+    "photo": getImagePath("LUZ BARBOSA.webp"),
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -76,7 +70,7 @@ export const professionals: Professional[] = [
   {
     "id": 3,
     "name": "Pedro Sampaio",
-    "photo": getSupabaseImageUrl("PEDRO SAMPAIO.webp"),
+    "photo": getImagePath("PEDRO SAMPAIO.webp"),
     "city": "São Paulo",
     "area": [
       "Filmagem e Fotografia"
@@ -91,7 +85,7 @@ export const professionals: Professional[] = [
   {
     "id": 4,
     "name": "Ivan Pereira",
-    "photo": getSupabaseImageUrl("IVAN.JPEG.webp"),
+    "photo": getImagePath("IVAN.JPEG.webp"),
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -110,7 +104,7 @@ export const professionals: Professional[] = [
   {
     "id": 5,
     "name": "Ray Santos",
-    "photo": getSupabaseImageUrl("RAY SOUZA.webp"),
+    "photo": getImagePath("RAY SOUZA.webp"),
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -127,7 +121,7 @@ export const professionals: Professional[] = [
   {
     "id": 6,
     "name": "Dornelles",
-    "photo": getSupabaseImageUrl("Dorneles.webp"),
+    "photo": getImagePath("Dorneles.webp"),
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -144,7 +138,7 @@ export const professionals: Professional[] = [
   {
     "id": 7,
     "name": "Andy Black",
-    "photo": getSupabaseImageUrl("ANDY BLACK.webp"),
+    "photo": getImagePath("ANDY BLACK.webp"),
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -161,7 +155,7 @@ export const professionals: Professional[] = [
   {
     "id": 8,
     "name": "Dhara Andrade",
-    "photo": getSupabaseImageUrl("DHARA ANDRADE.webp"),
+    "photo": getImagePath("DHARA ANDRADE.webp"),
     "city": "São Paulo",
     "area": [
       "Filmagem e Fotografia",
@@ -176,7 +170,7 @@ export const professionals: Professional[] = [
   {
     "id": 9,
     "name": "Vitor Almeida",
-    "photo": getSupabaseImageUrl("VITOR ALMEIDA.webp"),
+    "photo": getImagePath("VITOR ALMEIDA.webp"),
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -192,7 +186,7 @@ export const professionals: Professional[] = [
   {
     "id": 10,
     "name": "Debritas",
-    "photo": getSupabaseImageUrl("Debritas.webp"),
+    "photo": getImagePath("Debritas.webp"),
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -209,7 +203,7 @@ export const professionals: Professional[] = [
   {
     "id": 11,
     "name": "Mar Zenin",
-    "photo": getSupabaseImageUrl("Mar Zenin.webp"),
+    "photo": getImagePath("Mar Zenin.webp"),
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -227,7 +221,7 @@ export const professionals: Professional[] = [
   {
     "id": 12,
     "name": "Rare Odin",
-    "photo": getSupabaseImageUrl("RARE ODIN.webp"),
+    "photo": getImagePath("RARE ODIN.webp"),
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -244,23 +238,24 @@ export const professionals: Professional[] = [
   {
     "id": 13,
     "name": "Leandra Barros",
-    "photo": getSupabaseImageUrl("LEANDRA.webp"),
+    "photo": getImagePath("LEANDRA.webp"),
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
-      "Filmagem e Fotografia"
+      "Filmagem e Fotografia",
+      "Arte e Design"
     ],
     "skills": [
-      "Fotografia",
-      "Roteiro",
-      "Produção"
+      "Filmmaker",
+      "Fotógrafa",
+      "Diretora"
     ],
-    "portfolio": "https://drive.google.com/file/d/1dYNn4nQPKQSBVtD20Wq4j62bW2SriOc5/view?usp=drive_link"
+    "portfolio": "https://drive.google.com/file/d/1-AMGt_OFOU1HBvVHr3wjXyy4hYbxEpXi/view?usp=drivesdk"
   },
   {
     "id": 14,
     "name": "Juliana Bitencourt",
-    "photo": getSupabaseImageUrl("JULIANA BITENCOURT.webp"),
+    "photo": getImagePath("JULIANA BITENCOURT.webp"),
     "city": "São Paulo",
     "area": [
       "Filmagem e Fotografia",
@@ -275,7 +270,7 @@ export const professionals: Professional[] = [
   {
     "id": 15,
     "name": "Guilherme Calafate",
-    "photo": getSupabaseImageUrl("GUILHERME CALAFATE.webp"),
+    "photo": getImagePath("GUILHERME CALAFATE.webp"),
     "city": "São Paulo",
     "area": [
       "Som e Áudio"
@@ -290,7 +285,7 @@ export const professionals: Professional[] = [
   {
     "id": 16,
     "name": "João Victor",
-    "photo": getSupabaseImageUrl("JOAO VITOR.webp"),
+    "photo": getImagePath("JOAO VITOR.webp"),
     "city": "São Paulo",
     "area": [
       "Filmagem e Fotografia",
@@ -305,7 +300,7 @@ export const professionals: Professional[] = [
   {
     "id": 17,
     "name": "Eduardo Frois",
-    "photo": getSupabaseImageUrl("EDUARDO FROIS.webp"),
+    "photo": getImagePath("EDUARDO FROIS.webp"),
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -322,7 +317,7 @@ export const professionals: Professional[] = [
   {
     "id": 18,
     "name": "Pietro Universo",
-    "photo": getSupabaseImageUrl("PIETRO UNIVERSO.webp"),
+    "photo": getImagePath("PIETRO UNIVERSO.webp"),
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -341,7 +336,7 @@ export const professionals: Professional[] = [
   {
     "id": 19,
     "name": "Ju Costa",
-    "photo": getSupabaseImageUrl("JU COSTA.webp"),
+    "photo": getImagePath("JU COSTA.webp"),
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
@@ -357,7 +352,7 @@ export const professionals: Professional[] = [
   {
     "id": 20,
     "name": "Ellen Lopes",
-    "photo": getSupabaseImageUrl("ELLEN LOPES.webp"),
+    "photo": getImagePath("ELLEN LOPES.webp"),
     "city": "São Paulo",
     "area": [
       "Produção e Direção",
